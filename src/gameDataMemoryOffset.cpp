@@ -13,3 +13,7 @@ void GameValueMemoryOffset::setGameValueAddress(uintptr_t gameAddress) noexcept
 {
         this->gameValueAddress =  gameAddress + this->staticOffset;
 }
+char *GameValueMemoryOffset::getNameValue()
+{
+    return this->nameGameValue;
+}

@@ -9,6 +9,7 @@ struct GameValueMemoryOffset{
     GameValueMemoryOffset(const uintptr_t _staticOffset,const std::vector<unsigned int> _offsets,  char * _name)noexcept;
     uintptr_t getGameValueAddress() noexcept{return this->gameValueAddress;}
     void setGameValueAddress(uintptr_t gameAddress) noexcept;
+    char * getNameValue();
 
 private:
     uintptr_t staticOffset;
