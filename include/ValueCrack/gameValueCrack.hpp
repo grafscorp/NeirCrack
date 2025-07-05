@@ -1,0 +1,4 @@
+#ifndef GAMEVALUECRACK_HPP
+#define GAMEVALUECRACK_HPP
+#endif
+
