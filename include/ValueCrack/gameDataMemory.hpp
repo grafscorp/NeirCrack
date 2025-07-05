@@ -1,0 +1,3 @@
+#ifndef GAMEDATAMEMORY_HPP
+#define GAMEDATAMEMORY_HPP
+#endif
