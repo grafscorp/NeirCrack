@@ -37,4 +37,10 @@ target_include_directories(NeirCrackLib PUBLIC
     $<INSTALL_INTERFACE:include>
 )
 
+install(TARGETS NeirCrackLib
+    EXPORT NeirCrackLibTargets
+    ARCHIVE DESTINATION lib
+    INCLUDES DESTINATION include
+)
+install(DIRECTORY include/ DESTINATION include)
 
