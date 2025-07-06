@@ -30,6 +30,8 @@ file(GLOB_RECURSE HEADERS CONFIGURE_DEPENDS "include/*.cpp")
 
 add_library(NeirCrackLib STATIC ${SOURCES} ${HEADERS})
 
+target_link_directories(NeirCrackLib PUBLIC ${CMAKE_SOURCE_DIR}/include)
+
 target_include_directories(NeirCrackLib PUBLIC 
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include>
