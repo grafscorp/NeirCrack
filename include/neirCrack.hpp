@@ -8,8 +8,8 @@ class NeirCrack : public GameValueCrack
 {
     NeirCrack();
     ~NeirCrack();
-    bool WriteValue(GameValueMemoryOffset &newValue);
-    bool ReadValue(GameValueMemoryOffset& newValue);
+    virtual bool WriteGameValue(ValueAddrOffset &newValue) override;
+    virtual bool ReadGameValue(ValueAddrOffset& newValue) override;
 };
 
 
