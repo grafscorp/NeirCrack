@@ -8,7 +8,7 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-include_directories(${CMAKE_SOURCE_DIR}/include)
+#include_directories(${CMAKE_SOURCE_DIR}/include)
 
 
 file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS "src/*.cpp")
@@ -35,6 +35,4 @@ target_include_directories(NeirCrackLib PUBLIC
     $<INSTALL_INTERFACE:include>
 )
 
-
-target_link_directories(NeirCrackLib PUBLIC ${CMAKE_SOURCE_DIR}/include)
 
