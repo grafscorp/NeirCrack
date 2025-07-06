@@ -10,6 +10,9 @@ class NeirCrack : public GameValueCrack
     ~NeirCrack();
     virtual bool WriteGameValue(ValueAddrOffset &newValue) override;
     virtual bool ReadGameValue(ValueAddrOffset& newValue) override;
+private:
+    char * nameGame = "NeiR:Automata";
+    char *nameApp = "NieRAutomataCompat.exe";
 };
 
 
