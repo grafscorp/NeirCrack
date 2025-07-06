@@ -7,6 +7,7 @@
 #include <optional>
 
 
+using ValueAddrOffset=GameValueMemoryOffset ;
 };
 
 
