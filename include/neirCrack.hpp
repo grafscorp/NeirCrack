@@ -1,7 +1,7 @@
 #ifndef NEIRCRACK_HPP
 #define NEIRCRACK_HPP
 
-#include "gameValueCrack.hpp"
+#include "ValueCrack/gameValueCrack.hpp"
 
 
 class NeirCrack : public GameValueCrack
