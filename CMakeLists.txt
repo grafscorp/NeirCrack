@@ -9,19 +9,24 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 include_directories(${CMAKE_SOURCE_DIR}/include)
-set(HEADERS
-    include/ValueCrack/gameDataMemory.hpp
-    include/ValueCrack/gameValueCrack.hpp
-    include/ValueCrack/gameValueMemoryOffset.hpp
-    include/neirCrack.hpp
-)
 
-set(SOURCES 
-src/ValueCrack/gameDataMemory.cpp
-src/ValueCrack/gameValueCrack.cpp
-src/ValueCrack/gameDataMemoryOffset.cpp
-src/neirCrack.cpp
-)
+
+file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS "src/*.cpp")
+file(GLOB_RECURSE HEADERS CONFIGURE_DEPENDS "include/*.cpp")
+
+# set(HEADERS
+#     include/ValueCrack/gameDataMemory.hpp
+#     include/ValueCrack/gameValueCrack.hpp
+#     include/ValueCrack/gameValueMemoryOffset.hpp
+#     include/neirCrack.hpp
+# )
+
+# set(SOURCES 
+# src/ValueCrack/gameDataMemory.cpp
+# src/ValueCrack/gameValueCrack.cpp
+# src/ValueCrack/gameDataMemoryOffset.cpp
+# src/neirCrack.cpp
+# )
 
 add_library(NeirCrackLib STATIC ${SOURCES} ${HEADERS})
 
